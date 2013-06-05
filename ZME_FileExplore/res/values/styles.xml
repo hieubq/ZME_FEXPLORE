@@ -7,6 +7,7 @@
 
     <style name="Theme_NoTitleBar_Fullscreen" parent="android:Theme.NoTitleBar.Fullscreen">
         <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#FFFFFF</item>
     </style>
 
     <!-- Buttons -->

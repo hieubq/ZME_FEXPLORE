@@ -8,5 +8,4 @@
         <bitmap android:src="@drawable/main_addressbar_access"
             android:gravity="center"/>
     </item>
-        
 </selector>
