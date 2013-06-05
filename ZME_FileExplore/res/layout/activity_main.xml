@@ -5,17 +5,29 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <!-- viewpagerindicator - tabs screen icon -->
     <com.viewpagerindicator.IconPageIndicator
         android:id="@+id/indicator"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
+    <!-- Main_Address_Bar -->
+    <include android:id="@+id/main_addressbar"
+        layout="@layout/bar_main_addressbar"/>
     
+    <!-- Multiselection_Bar -->
+    <include android:id="@+id/multiselection_bar"
+        android:visibility="gone"
+        layout=""/>
     
+    <!-- ViewPager - contain all working screen -->
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+    <!-- Actionbar_1 - normal action -->
+    
+    <!-- Actionbar_2 - action on multiselection mode -->
 </LinearLayout>
