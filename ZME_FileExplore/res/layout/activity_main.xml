@@ -13,12 +13,13 @@
 
     <!-- Main_Address_Bar -->
     <include android:id="@+id/main_addressbar"
-        layout="@layout/bar_main_addressbar"/>
+        layout="@layout/bar_main_addressbar"
+        android:visibility="gone"/>
     
     <!-- Multiselection_Bar -->
     <include android:id="@+id/multiselection_bar"
-        android:visibility="gone"
-        layout=""/>
+        android:visibility="visible"
+        layout="@layout/bar_multiselsection_bar"/>
     
     <!-- ViewPager - contain all working screen -->
     <android.support.v4.view.ViewPager

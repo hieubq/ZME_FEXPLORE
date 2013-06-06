@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+          <layer-list android:opacity="transparent">
+            <item >
+                <color android:color="#0080A8"/>
+            </item>
+            <item >
+                <bitmap android:src="@drawable/multiselection_bar_selectnone"
+					android:gravity="center"
+					android:filter="true"/>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list android:opacity="transparent">
+            <item >
+                <color android:color="#484848"/>
+            </item>
+            <item >
+                <bitmap android:src="@drawable/multiselection_bar_selectnone"
+					android:gravity="center"
+					android:filter="true"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>

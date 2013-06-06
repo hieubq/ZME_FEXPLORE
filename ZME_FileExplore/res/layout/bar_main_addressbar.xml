@@ -1,72 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/border_main_addressbar"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:baselineAligned="false"
-    android:gravity="center_vertical"
     android:orientation="horizontal"
-    tools:ignore="NestedWeights" >
+    android:gravity="center_vertical"
+    android:baselineAligned="false"
+    android:background="@drawable/border_main_addressbar" >
 
     <!-- main_addressbar_access -->
 
     <LinearLayout
-        android:background="@drawable/border_main_addressbar_item"
+        android:background="#484848"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="0dp"
-        android:layout_marginRight="-3dp">
+        android:layout_marginRight="-3dp" >
 
         <Button
             android:id="@+id/btn_main_addressbar_access"
+            android:background="@drawable/btn_main_addressbar_access"
             android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/btn_main_addressbar_access" />
-
+            android:layout_height="40dp" />
     </LinearLayout>
     <!-- main_addressbar_address -->
 
-    <LinearLayout
-        android:background="@drawable/border_main_addressbar_item"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:padding="0dp"
-        android:layout_marginRight="-3dp">
-
-        <Button
-            android:id="@+id/prev_address"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="/" 
-            style="@style/btn_main_addressbar_address" />
-
-        <Button
-            android:id="@+id/curr_address"
-            style="@style/btn_main_addressbar_address"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="-3dp"
-            android:layout_weight="1"
-            android:text="sdcard"
-            android:visibility="gone"/>
-
-    </LinearLayout>
-
+	<LinearLayout 
+	    android:background="@drawable/border_main_addressbar_item"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:layout_marginRight="-3dp">
+	    <Button android:id="@+id/prev_address"
+	        android:layout_width="0dp"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        style="@style/btn_main_addressbar_address"
+	        android:text="/"/>
+	    
+	    <Button android:id="@+id/curr_address"
+	        android:layout_width="0dp"
+	        android:layout_height="40dp"
+	        android:layout_marginLeft="-3dp"
+	        android:layout_weight="1"
+	        style="@style/btn_main_addressbar_address"
+	        android:text="sdcard"
+	        android:visibility="visible"/>
+	    
+	</LinearLayout>
+	
     <!-- main_addressbar_close -->
-
-    <LinearLayout
+	<LinearLayout
         android:background="@drawable/border_main_addressbar_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
         <Button
             android:id="@+id/btn_main_addressbar_close"
+            android:background="@drawable/btn_main_addressbar_close"
             android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/btn_main_addressbar_close" />
+            android:layout_height="40dp" />
     </LinearLayout>
-
+	
 </LinearLayout>
